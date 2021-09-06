@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\start.cs" />
     <Compile Include="Assets\Scripts\RandomSongs.cs" />
+    <Compile Include="Assets\Scripts\Countdown.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
