@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 
 public class Countdown : MonoBehaviour
@@ -27,7 +24,13 @@ public class Countdown : MonoBehaviour
         if (currentTime <= 0)
         {
             currentTime = 0;
+            
+            Vibrator.Vibrate(250);
+            Vibrator.Vibrate(0);
+            
+
         }
         
     }
+
 }

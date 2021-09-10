@@ -14,7 +14,7 @@ public class RandomSongs : MonoBehaviour
     {
         PickRandomSong();
     }
-    private void PickRandomSong()
+    public void PickRandomSong()
     {
         string[] songs = new string[] { "snik", "light", "mad clip", "lex", "toquel", "hawk", "immune" };
         string randomSong = songs[Random.Range(0, songs.Length)];
