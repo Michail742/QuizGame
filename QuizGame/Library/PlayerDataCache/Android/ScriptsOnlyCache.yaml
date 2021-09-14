@@ -43,6 +43,8 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.RectMask2D
+    - UnityEngine.UI.Text
+    - UnityEngine.UI.Toggle
   sceneClasses:
     Assets/Scenes/MainScene.unity:
     - Class: 1
@@ -68,11 +70,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1600}
     - Class: 114
+      Script: {instanceID: 1692}
+    - Class: 114
       Script: {instanceID: 1710}
     - Class: 114
       Script: {instanceID: 1886}
     - Class: 114
       Script: {instanceID: 2286}
+    - Class: 114
+      Script: {instanceID: 2294}
     - Class: 114
       Script: {instanceID: 2568}
     - Class: 114
