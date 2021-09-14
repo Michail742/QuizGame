@@ -16,13 +16,13 @@ public class CustomSongs : MonoBehaviour
         addsong = addsong.GetComponent<Button>();
         can = can.GetComponent<Canvas>();
         songtext = songtext.GetComponent<TMP_InputField>();
-        songs = new string[10];
+        songs = new string[100];
         currentIndex = 0; //Make sure we start at 0
     }
 
     public void CustomSong()
     {
-        //With each click of the button the word in the inputfield is added to the array
+        //With each click of the button the song in the inputfield is added to the array
         songs[currentIndex] = songtext.text; //Add the word at the current index
 
         if (currentIndex < 9)
