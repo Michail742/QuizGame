@@ -1,4 +1,0 @@
-#Tue Sep 14 16:30:36 EEST 2021
-base.0=C\:\\Users\\ninot\\repos\\QuizGame\\QuizGame\\Temp\\gradleOut\\launcher\\build\\intermediates\\dex\\release\\out\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex

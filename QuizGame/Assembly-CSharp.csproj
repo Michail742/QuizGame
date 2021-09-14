@@ -59,7 +59,6 @@
     <Compile Include="Assets\Scripts\SettingsMenu.cs" />
     <Compile Include="Assets\Scripts\CustomSongs.cs" />
     <Compile Include="Assets\Scripts\AddSongs.cs" />
-    <Compile Include="Assets\Scripts\start.cs" />
     <Compile Include="Assets\Scripts\Vibrator.cs" />
     <Compile Include="Assets\Scripts\RandomSongs.cs" />
     <Compile Include="Assets\Scripts\Countdown.cs" />
