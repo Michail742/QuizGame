@@ -4,8 +4,9 @@ ScriptsOnlyBuild:
     - AddSongs
     - Countdown
     - CustomSongs
+    - ExitApplication
     - RandomSongs
-    - SettingsMenu
+    - ScoreSystem
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -45,6 +46,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.RectMask2D
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
+    - UnityEngine.UI.ToggleGroup
   sceneClasses:
     Assets/Scenes/MainScene.unity:
     - Class: 1
@@ -80,23 +82,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2294}
     - Class: 114
-      Script: {instanceID: 2568}
+      Script: {instanceID: 2720}
     - Class: 114
-      Script: {instanceID: 2722}
+      Script: {instanceID: 2856}
     - Class: 114
-      Script: {instanceID: 2858}
+      Script: {instanceID: 2888}
     - Class: 114
-      Script: {instanceID: 2890}
+      Script: {instanceID: 2936}
     - Class: 114
-      Script: {instanceID: 2938}
+      Script: {instanceID: 3124}
     - Class: 114
-      Script: {instanceID: 3126}
+      Script: {instanceID: 3380}
     - Class: 114
-      Script: {instanceID: 3382}
+      Script: {instanceID: 3476}
     - Class: 114
-      Script: {instanceID: 3498}
+      Script: {instanceID: 3496}
     - Class: 114
-      Script: {instanceID: 4260}
+      Script: {instanceID: 4258}
+    - Class: 114
+      Script: {instanceID: 4572}
     - Class: 114
       Script: {instanceID: 4850}
     - Class: 114
@@ -107,6 +111,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5332}
     - Class: 114
       Script: {instanceID: 5540}
+    - Class: 114
+      Script: {instanceID: 33194}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -256,12 +262,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: IKManager2D
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SettingsMenu
   - hash:
       serializedVersion: 2
       Hash: 5f170942ee57c7a568f5bcfc7521adea
@@ -546,6 +546,12 @@ ScriptsOnlyBuild:
     className: SpriteShapeGeometryCache
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ExitApplication
+  - hash:
+      serializedVersion: 2
       Hash: b424b4eeb810aecb0ff91c62639241e9
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.Experimental.U2D.Animation
@@ -688,6 +694,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: 18306f4d8d0b41d3621c18c026baab39
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScoreSystem
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainScene.unity

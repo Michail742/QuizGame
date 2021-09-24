@@ -11,16 +11,16 @@ public static class Vibrator
     public static AndroidJavaObject currentActivity;
     public static AndroidJavaObject vibrator;
 #endif
-    public static void Vibrate(long milliseconds = 250)
+    public static void Vibrate(long milliseconds)
     {
         if (IsAndroid())
         {
             vibrator.Call("vibrate", milliseconds);
         }
-        //else
-        //{
-        //    Handheld.Vibrate();
-        //}
+        else
+        {
+            Handheld.Vibrate();
+        }
     }
     public static void Cancel()
     {
