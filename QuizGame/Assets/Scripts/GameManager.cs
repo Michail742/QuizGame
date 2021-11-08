@@ -40,6 +40,18 @@ public class GameManager : MonoBehaviour
 
     // Update is called once per frame
     void Update(){
+        //Countdown
+
+        currentTime -= 1 * Time.deltaTime;
+        countdownText.text = currentTime.ToString("0");
+
+
+        if (currentTime <= 0)
+        {
+            currentTime = 0;
+
+            Vibrator.Vibrate(250);
+        }
         //CustomSongs
 
         //With each click of the button the song in the inputfield is added to the array
@@ -55,16 +67,7 @@ public class GameManager : MonoBehaviour
             currentIndex = 0; //Reset back to 0 and start filling the array from the start
         }
 
-        //Countdown
-        currentTime -= 1 * Time.deltaTime;
-        countdownText.text = currentTime.ToString("0");
-
-
-        if (currentTime <= 0){
-            currentTime = 0;
-
-            Vibrator.Vibrate(250);
-        }
+        
 
         //ExitApp
         if (Input.GetKeyDown(KeyCode.Escape))

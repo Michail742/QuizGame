@@ -1,12 +1,10 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - AddSongs
-    - Countdown
-    - CustomSongs
-    - ExitApplication
-    - RandomSongs
-    - ScoreSystem
+    - CameraAnchor
+    - GameManager
+    - Instatiate
+    - ViewportHandler
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -48,6 +46,71 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.ToggleGroup
   sceneClasses:
+    Assets/Scenes/GameScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1512}
+    - Class: 114
+      Script: {instanceID: 1568}
+    - Class: 114
+      Script: {instanceID: 1602}
+    - Class: 114
+      Script: {instanceID: 1710}
+    - Class: 114
+      Script: {instanceID: 1886}
+    - Class: 114
+      Script: {instanceID: 2294}
+    - Class: 114
+      Script: {instanceID: 2720}
+    - Class: 114
+      Script: {instanceID: 2886}
+    - Class: 114
+      Script: {instanceID: 2934}
+    - Class: 114
+      Script: {instanceID: 3122}
+    - Class: 114
+      Script: {instanceID: 3378}
+    - Class: 114
+      Script: {instanceID: 3474}
+    - Class: 114
+      Script: {instanceID: 3494}
+    - Class: 114
+      Script: {instanceID: 3756}
+    - Class: 114
+      Script: {instanceID: 4846}
+    - Class: 114
+      Script: {instanceID: 17288}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/MainScene.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -68,11 +131,11 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1566}
+      Script: {instanceID: 1512}
     - Class: 114
-      Script: {instanceID: 1600}
+      Script: {instanceID: 1568}
     - Class: 114
-      Script: {instanceID: 1692}
+      Script: {instanceID: 1602}
     - Class: 114
       Script: {instanceID: 1710}
     - Class: 114
@@ -84,35 +147,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2720}
     - Class: 114
-      Script: {instanceID: 2856}
+      Script: {instanceID: 2886}
     - Class: 114
-      Script: {instanceID: 2888}
+      Script: {instanceID: 2934}
     - Class: 114
-      Script: {instanceID: 2936}
+      Script: {instanceID: 3122}
     - Class: 114
-      Script: {instanceID: 3124}
+      Script: {instanceID: 3378}
     - Class: 114
-      Script: {instanceID: 3380}
+      Script: {instanceID: 3474}
     - Class: 114
-      Script: {instanceID: 3476}
+      Script: {instanceID: 3494}
     - Class: 114
-      Script: {instanceID: 3496}
+      Script: {instanceID: 4846}
     - Class: 114
-      Script: {instanceID: 4258}
+      Script: {instanceID: 4872}
     - Class: 114
-      Script: {instanceID: 4572}
+      Script: {instanceID: 5266}
     - Class: 114
-      Script: {instanceID: 4850}
+      Script: {instanceID: 5688}
     - Class: 114
-      Script: {instanceID: 4876}
+      Script: {instanceID: 17978}
     - Class: 114
-      Script: {instanceID: 5270}
-    - Class: 114
-      Script: {instanceID: 5332}
-    - Class: 114
-      Script: {instanceID: 5540}
-    - Class: 114
-      Script: {instanceID: 33194}
+      Script: {instanceID: 17980}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -130,6 +187,12 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: bcaee4c2a83047257b5f47d6ed264b75
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Toggle
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -166,12 +229,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEditor.U2D.IK
     className: IKEditorManagerHelper
-  - hash:
-      serializedVersion: 2
-      Hash: bcaee4c2a83047257b5f47d6ed264b75
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Toggle
   - hash:
       serializedVersion: 2
       Hash: 59ce5902048c1041729c804e2772b2ce
@@ -274,12 +331,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: CanvasScaler
-  - hash:
-      serializedVersion: 2
-      Hash: 5b2cb23a1b1b90a67c2a89357ee8a37a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CustomSongs
   - hash:
       serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
@@ -420,6 +471,12 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
+      Hash: 4402b0629755bc0cdc566a7f9f026340
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Instatiate
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -498,12 +555,6 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AddSongs
-  - hash:
-      serializedVersion: 2
       Hash: 87cef3c82381dc586f6772c3e27561b6
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.Experimental.U2D.Animation
@@ -544,12 +595,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.SpriteShape.Runtime.dll
     namespaceName: 
     className: SpriteShapeGeometryCache
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ExitApplication
   - hash:
       serializedVersion: 2
       Hash: b424b4eeb810aecb0ff91c62639241e9
@@ -648,18 +693,6 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: f615f425c8f8a5b1e03ecc26604ebadd
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RandomSongs
-  - hash:
-      serializedVersion: 2
-      Hash: f7b17c9f9b323e9bfa42892281e9e029
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Countdown
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
@@ -670,6 +703,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 2bfa7e8c7d9886b6a8e8aaf69efcabfd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -696,11 +735,18 @@ ScriptsOnlyBuild:
     className: FabrikSolver2D
   - hash:
       serializedVersion: 2
-      Hash: 18306f4d8d0b41d3621c18c026baab39
+      Hash: 503c8d9dff3c3d6020b983f72bed6fcf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: ScoreSystem
+    className: CameraAnchor
+  - hash:
+      serializedVersion: 2
+      Hash: c5c598a6ef61b2596fd6c07a8f082861
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ViewportHandler
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainScene.unity
+  - Assets/Scenes/GameScene.unity
   playerPath: C:/Users/ninot/repos/QuizGame/QuizGame/Build/quizGame.apk
