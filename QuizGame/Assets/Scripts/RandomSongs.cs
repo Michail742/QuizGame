@@ -12,9 +12,11 @@ public class RandomSongs : MonoBehaviour
     }
     public void PickRandomSong()
     {
-        string[] songs = new string[] { "snik", "light", "mad clip", "lex", "toquel", "hawk", "immune", "rack", "fly lo", "bob marley" };
+        string[] songs = new string[] { "snik \n seniorita", "light", "mad clip", "lex", "toquel", "hawk", "immune", "rack", "fly lo", "bob marley \n get up stand up" };
         string randomSong = songs[Random.Range(0, songs.Length)];
         myText.text = randomSong;
-        
+
     }
 }
+
+

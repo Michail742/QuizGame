@@ -1,16 +1,17 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - CameraAnchor
+    - CameraAspectRatioScaler
     - Countdown
     - RandomSongs
+    - SaveInputfield
     - SceneManagemenet
     - ScoreSystem
-    - ViewportHandler
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -21,9 +22,12 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
+    Unity.Mobile.AndroidLogcat.Editor.dll:
+    - Unity.Android.Logcat.AndroidLogcatManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
+    - TMPro.TMP_Dropdown
     - TMPro.TMP_FontAsset
     - TMPro.TMP_InputField
     - TMPro.TMP_Settings
@@ -42,10 +46,11 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.LayoutElement
+    - UnityEngine.UI.Mask
     - UnityEngine.UI.RectMask2D
-    - UnityEngine.UI.Text
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Toggle
-    - UnityEngine.UI.ToggleGroup
   sceneClasses:
     Assets/Scenes/GameScene.unity:
     - Class: 1
@@ -60,34 +65,32 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1568}
+      Script: {instanceID: 1572}
     - Class: 114
-      Script: {instanceID: 1592}
+      Script: {instanceID: 1596}
     - Class: 114
-      Script: {instanceID: 1888}
+      Script: {instanceID: 1896}
     - Class: 114
-      Script: {instanceID: 2722}
+      Script: {instanceID: 2740}
     - Class: 114
-      Script: {instanceID: 2888}
+      Script: {instanceID: 2906}
     - Class: 114
-      Script: {instanceID: 2936}
+      Script: {instanceID: 2954}
     - Class: 114
-      Script: {instanceID: 3126}
+      Script: {instanceID: 3144}
     - Class: 114
-      Script: {instanceID: 3384}
+      Script: {instanceID: 3404}
     - Class: 114
-      Script: {instanceID: 3500}
+      Script: {instanceID: 3520}
     - Class: 114
-      Script: {instanceID: 4348}
+      Script: {instanceID: 4368}
     - Class: 114
-      Script: {instanceID: 4634}
+      Script: {instanceID: 4674}
     - Class: 114
-      Script: {instanceID: 5820}
+      Script: {instanceID: 5844}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -124,45 +127,49 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1512}
+      Script: {instanceID: 1572}
     - Class: 114
-      Script: {instanceID: 1568}
+      Script: {instanceID: 1608}
     - Class: 114
-      Script: {instanceID: 1604}
+      Script: {instanceID: 1700}
     - Class: 114
-      Script: {instanceID: 1712}
+      Script: {instanceID: 1718}
     - Class: 114
-      Script: {instanceID: 1888}
+      Script: {instanceID: 1896}
     - Class: 114
-      Script: {instanceID: 2288}
+      Script: {instanceID: 2304}
     - Class: 114
-      Script: {instanceID: 2296}
+      Script: {instanceID: 2740}
     - Class: 114
-      Script: {instanceID: 2722}
+      Script: {instanceID: 2906}
     - Class: 114
-      Script: {instanceID: 2888}
+      Script: {instanceID: 2920}
     - Class: 114
-      Script: {instanceID: 2936}
+      Script: {instanceID: 2954}
     - Class: 114
-      Script: {instanceID: 2968}
+      Script: {instanceID: 2986}
     - Class: 114
-      Script: {instanceID: 3126}
+      Script: {instanceID: 3144}
     - Class: 114
-      Script: {instanceID: 3384}
+      Script: {instanceID: 3404}
     - Class: 114
-      Script: {instanceID: 3480}
+      Script: {instanceID: 3414}
     - Class: 114
-      Script: {instanceID: 3500}
+      Script: {instanceID: 3520}
     - Class: 114
-      Script: {instanceID: 3852}
+      Script: {instanceID: 3604}
     - Class: 114
-      Script: {instanceID: 4634}
+      Script: {instanceID: 4562}
     - Class: 114
-      Script: {instanceID: 4862}
+      Script: {instanceID: 4674}
     - Class: 114
-      Script: {instanceID: 4888}
+      Script: {instanceID: 4772}
     - Class: 114
-      Script: {instanceID: 5282}
+      Script: {instanceID: 4882}
+    - Class: 114
+      Script: {instanceID: 4908}
+    - Class: 114
+      Script: {instanceID: 5306}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -180,12 +187,6 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
-  - hash:
-      serializedVersion: 2
-      Hash: bcaee4c2a83047257b5f47d6ed264b75
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Toggle
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -230,6 +231,12 @@ ScriptsOnlyBuild:
     className: IKEditorManagerHelper
   - hash:
       serializedVersion: 2
+      Hash: bcaee4c2a83047257b5f47d6ed264b75
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Toggle
+  - hash:
+      serializedVersion: 2
       Hash: 59ce5902048c1041729c804e2772b2ce
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
@@ -246,6 +253,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScaleToFitScreen
   - hash:
       serializedVersion: 2
       Hash: 21a9c6dbf300fc1f6dc15ca7e2c39a37
@@ -270,6 +283,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Android
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -312,6 +331,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: ae8bf742092e2559228dcbb5688e061f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraViewportHandler
   - hash:
       serializedVersion: 2
       Hash: cfdd0010efd7b54c2b7512656dbc9119
@@ -398,6 +423,12 @@ ScriptsOnlyBuild:
     className: TMP_SelectionCaret
   - hash:
       serializedVersion: 2
+      Hash: 88014abc94116aad3a7031e33f7eafd9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AnchorGameObject
+  - hash:
+      serializedVersion: 2
       Hash: a306e12d896ddcca949923c805691027
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -470,6 +501,12 @@ ScriptsOnlyBuild:
     className: SpriteShapeController
   - hash:
       serializedVersion: 2
+      Hash: ea7f41cfef3909f1c1e5c0b3f223a937
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SaveInputfield
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -492,12 +529,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
-  - hash:
-      serializedVersion: 2
-      Hash: c5c598a6ef61b2596fd6c07a8f082861
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ViewportHandler
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -626,10 +657,10 @@ ScriptsOnlyBuild:
     className: SpriteShapeGeometryCache
   - hash:
       serializedVersion: 2
-      Hash: 503c8d9dff3c3d6020b983f72bed6fcf
+      Hash: 381dfa76b50acb01a1498b53f9731967
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: CameraAnchor
+    className: CameraAspectRatioScaler
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -696,6 +727,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
     className: SpriteSkinEntity
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: AndroidNativeCore.dll
+    namespaceName: AndroidNativeCore
+    className: androidEventHandler
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -774,18 +811,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Countdown
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: AndroidNativeCore.dll
-    namespaceName: AndroidNativeCore
-    className: androidEventHandler
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Android
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainScene.unity
