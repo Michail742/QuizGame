@@ -8,14 +8,13 @@ public class CustomSongs : MonoBehaviour
     public Button addsong;
     public Canvas can;
     public TMP_InputField songtext;
+    public TMP_InputField artisttext;
     public string[] songs;
     public int currentIndex; //This keeps track of the index
 
     public void Start()
     {
-        addsong = addsong.GetComponent<Button>();
-        can = can.GetComponent<Canvas>();
-        songtext = songtext.GetComponent<TMP_InputField>();
+        
         songs = new string[100];
         currentIndex = 0; //Make sure we start at 0
     }
